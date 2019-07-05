@@ -8,7 +8,7 @@ In machine learning, we often have to minimize a loss function (say, MSE) of giv
 
 ![THC_plot](https://user-images.githubusercontent.com/52567223/60716640-dbab1f80-9f17-11e9-95d8-78ada3cdb5c8.png)
 
-Three-Hump-Camel function is definded on (ℝxℝ), has three local minima, and has global minimum at x=(0,0)
+Three-Hump-Camel function is definded on (ℝxℝ), has three local minima, and has global minimum at x=(0,0) with the function value of 0
 
 ## 3. Plain vanilla Gradient Descent: initial value is set at [2,2]
 
