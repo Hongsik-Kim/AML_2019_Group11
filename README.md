@@ -2,11 +2,11 @@
 
 ## 1. Explain concisely, in layman’s terms without using any formulae
 
-In machine learning, we often have to minimize a loss function (say, MSE) of given model. However, it is extremely hard to analytically minimize MSE as the number of parameters in the model goes up. Hence, we use numerical minimizing technique, gradient descent, as an alternative. Gradient is the direction which the function value can increase in the fastest speed. The concept of gradient descent (hereafter, GD) is quite straightforward. Given an initial point (θ_0), we simple update θ by subtracting gradient evaluated at previous θ multiplied by certain parameter called learning-rate (η). By updating θ, we get closer to the certain point, local (global) minimum of the function. We keep updating θ until there is no significant difference between previous gradient and the latest gradient. However, plain GD method has some drawbacks. For example, it can oscillate depending on the η or stuck in the saddle-point. Hence, two advanced methods have been devised. First, momentum is a method that can reduce oscillation and enhance convergence. Second, Nesterov’s Accelerated Gradient (NAG) is extended version of momentum method. It has better convergence than momentum method.
+In machine learning, we often have to minimize a loss function (say, MSE) of given model. However, it is extremely hard to analytically minimize MSE as the number of parameters in the model goes up. Hence, we use numerical minimizing technique, gradient descent, as an alternative. Gradient is the direction which the function value can increase in the fastest speed. The concept of gradient descent (hereafter, GD) is quite straightforward. Given an initial point (θ_0), we simple update θ by subtracting gradient evaluated at previous θ multiplied by certain parameter called learning-rate (η). By updating θ, we get closer to the certain point, local (global) minimum of the function. We keep updating θ until there is no significant difference between previous gradient and the latest gradient. However, plain GD method has some drawbacks. For example, it can oscillate depending on the η or stuck in the saddle-point. Hence, two advanced methods have been devised. First, momentum is a method that can reduce oscillation and enhance convergence. Second, Nesterov’s Accelerated Gradient (NAG) is extended version of momentum method. It has better convergence than the momentum method.
 
-## 2. Function Description
+## 2. Function Description : Three-Hump-Camel function
 ![THC_plot](https://user-images.githubusercontent.com/52567223/60716640-dbab1f80-9f17-11e9-95d8-78ada3cdb5c8.png)
-
+Three-Hump-Camel function is definded on (ℝxℝ), has three local minima, and has global minimum at x=(0,0)
 
 ## 3. Plain vanilla Gradient Descent: initial value is set at [2,2]
 
@@ -20,7 +20,7 @@ In machine learning, we often have to minimize a loss function (say, MSE) of giv
 
 [Figure 4] Converging pattern of x w.r.t iteration numbers. As iteration number goes up, the x gradually converges to a local maximum point of [1.75, -0.87].
 
-## 4. Two alternative GD: initial value is set at [2,2]
+## 4. Two alternative Gradient Descent: initial value is set at [2,2]
 
 [Figure 5] Momentum method: Minimized function values w.r.t different learning-rates. Regardless of learning-rates, the momentum method shows stable minimization result (at global minimum).
 
