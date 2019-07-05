@@ -12,17 +12,25 @@ Three-Hump-Camel function is definded on (ℝxℝ), has three local minima, and 
 
 ## 3. Plain vanilla Gradient Descent: initial value is set at [2,2]
 
- 	 
+![Figure1](https://user-images.githubusercontent.com/52567223/60723143-cd1a3380-9f2a-11e9-8709-74b28a98cbe5.png)
+
 [Figure 1] Minimized function values with respect to (w.r.t) different learning-rates. As shown in above figure, if the learning-rate is too small, the minimized function values get stuck in a local minimum value of 0.3
+
+![Figure2](https://user-images.githubusercontent.com/52567223/60723144-cd1a3380-9f2a-11e9-8147-0d6ffb8818eb.png)
 
 [Figure 2] The number of iteration w.r.t different learning-rates. The smaller the learning-rate, the larger the iteration number and longer computation time.
 
- 	 
+![Figure3](https://user-images.githubusercontent.com/52567223/60723145-cd1a3380-9f2a-11e9-95d5-475213322315.png)
+
 [Figure 3] Converging pattern of function values w.r.t iteration numbers. As iteration number goes up, the function gets stuck in a local minimum (0.3) and converges to it.	
+
+![Figure4](https://user-images.githubusercontent.com/52567223/60723146-cd1a3380-9f2a-11e9-9e90-054149792e8c.png)
 
 [Figure 4] Converging pattern of x w.r.t iteration numbers. As iteration number goes up, the x gradually converges to a local maximum point of [1.75, -0.87].
 
 ## 4. Two alternative Gradient Descent: initial value is set at [2,2]
+
+![Figure5](https://user-images.githubusercontent.com/52567223/60723147-cdb2ca00-9f2a-11e9-8f57-f83bf3f3a469.png)
 
 [Figure 5] Momentum method: Minimized function values w.r.t different learning-rates. Regardless of learning-rates, the momentum method shows stable minimization result (at global minimum).
 
