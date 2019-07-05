@@ -34,10 +34,15 @@ Three-Hump-Camel function is definded on (ℝxℝ), has three local minima, and 
 
 [Figure 5] Momentum method: Minimized function values w.r.t different learning-rates. Regardless of learning-rates, the momentum method shows stable minimization result (at global minimum).
 
+![Figure6](https://user-images.githubusercontent.com/52567223/60723148-cdb2ca00-9f2a-11e9-9278-2d1e4bca840b.png)
+
 [Figure 6] NAG method: Minimized function values w.r.t different learning-rates. Regardless of learning-rates, the NAG method shows stable minimization result (at global minimum).
 
- 	 
+![Figure7](https://user-images.githubusercontent.com/52567223/60723149-cdb2ca00-9f2a-11e9-97cb-9c614d756db9.png)
+
 [Figure 7] Momentum method: Converging pattern of function values w.r.t iterations. As iteration number goes up, the function gradually converges to global minimum value of 0 even if the learning-rate (η) is very small (0.001).
+
+![Figure8](https://user-images.githubusercontent.com/52567223/60723151-ce4b6080-9f2a-11e9-875f-083f39f665df.png)
 
 [Figure 8] NAG method: Converging pattern of function values w.r.t iterations. As iteration number goes up, the function gradually converges to global minimum value of 0 even if the learning-rate (η) is very small (0.001).
 
