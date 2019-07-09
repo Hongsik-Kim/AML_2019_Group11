@@ -13,6 +13,8 @@ import os
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
+
+# Changing working directory
 os.chdir('PUT YOUR WORKING DIRECTORY IN HERE')
 
 #=========================================================================================================================================================================================================================
@@ -61,12 +63,24 @@ object1 = gd_2d_plain(Three_Hump_Camel,Three_Hump_Camel_gradient)
 res1 = object1.minimize(x0,0.001,tol=1e-8)
 print('function value of plain method : ',np.around(res1.fval,5))
 
+plt.plot(np.arange(res1.niter+1),np.log(res1.fval_path))
+plt.xlabel('Iteration number')
+plt.ylabel('Function value\n(log scale)')
+plt.title('Path of function values')
+plt.show()
+
 #=========================================================================================================================================================================================================================
 
 # Momentum gd
 object2 = gd_2d_momentum(Three_Hump_Camel,Three_Hump_Camel_gradient)
 res2 = object2.minimize(x0,0.001,tol=1e-8)
 print('function value of momentum method : ',np.around(res2.fval,5))
+
+plt.plot(np.arange(res2.niter+1),np.log(res2.fval_path))
+plt.xlabel('Iteration number')
+plt.ylabel('Function value\n(log scale)')
+plt.title('Path of function values')
+plt.show()
 
 #=========================================================================================================================================================================================================================
 
@@ -75,3 +89,8 @@ object3 = gd_2d_NAG(Three_Hump_Camel,Three_Hump_Camel_gradient)
 res3 = object3.minimize(x0,0.001,tol=1e-8)
 print('function value of NAG method : ',np.around(res3.fval,5))
 
+plt.plot(np.arange(res3.niter+1),np.log(res3.fval_path))
+plt.xlabel('Iteration number')
+plt.ylabel('Function value\n(log scale)')
+plt.title('Path of function values')
+plt.show()
