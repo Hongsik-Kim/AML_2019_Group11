@@ -1,9 +1,9 @@
 """ 
 Introduction to Machine Learning
 
-Course work 1
+Course work Part 1
 
-@author : Hongsik. Kim
+Group 11
 
 """
 
@@ -15,7 +15,7 @@ import time
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from matplotlib import cm
-os.chdir('/Users/congcondk/Desktop/CASS/Term3/Machine Learning/Coursework/Output')
+os.chdir('PUT YOUR WORKING DIRECTORY IN HERE')
 
 #=========================================================================================================================================================================================================================
 
